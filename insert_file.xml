@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:padding="5dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <EditText
+
+            android:id="@+id/txt_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Full Name"
+            android:inputType="text"
+            android:textSize="20sp"
+            android:tooltipText="Enter name"
+            tools:ignore="HardcodedText" />
+
+
+
+
+            >
+            <EditText
+                android:tooltipText="enter Guardian name"
+                android:id="@+id/txt_guardian"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="guardian name"
+                android:inputType="text"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText" />
+
+
+
+            <EditText
+                android:tooltipText="enter address"
+                android:id="@+id/txt_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="enter address"
+
+                android:textSize="20sp"
+                tools:ignore="HardcodedText" />
+
+
+
+            <EditText
+                android:tooltipText="enter cnic"
+                android:id="@+id/txt_cnic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="enter cnic"
+
+                android:textSize="20sp"
+                tools:ignore="HardcodedText" />
+
+
+
+
+            <EditText
+                android:tooltipText="enter mobile no"
+                android:id="@+id/txt_phno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="enter phone no"
+
+                android:textSize="20sp"
+                tools:ignore="HardcodedText" />
+
+
+
+            <EditText
+                android:tooltipText="enter email"
+                android:id="@+id/txt_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="enter email"
+
+                android:textSize="20sp"
+                tools:ignore="HardcodedText" />
+
+
+
+            <EditText
+                android:tooltipText="enter Program"
+                android:id="@+id/txt_program"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Enter program"
+
+                android:textSize="20sp"
+                tools:ignore="HardcodedText" />
+
+
+
+
+
+
+
+
+
+
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"></View>
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <ImageView
+                android:layout_width="75dp"
+                android:padding="5dp"
+                android:background="@drawable/imgborder"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_height="100dp"
+                android:src="@drawable/bio"></ImageView>
+            <TextView
+                android:layout_width="75dp"
+                android:layout_height="40dp"
+                android:text="Not captured"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="50dp"
+                android:textSize="15sp"
+                android:textStyle="bold"></TextView>
+
+
+            <Button
+                android:id="@+id/btn_capture"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+android:backgroundTint="#01fee9"
+                android:text="capture"
+                android:textSize="22sp"
+                android:textColor="#F0F8FF"
+                android:layout_marginLeft="120dp"
+                android:padding="5dp"
+                android:layout_marginTop="14dp"
+                ></Button>
+            <Button
+
+                android:id="@+id/btn_verify"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:backgroundTint="#01fee9"
+                android:text="verify"
+                android:textSize="22sp"
+                android:textColor="#F0F8FF"
+                android:layout_marginLeft="120dp"
+                android:padding="5dp"
+                android:layout_marginTop="62dp"
+                ></Button>
+
+            <ImageView
+
+                android:layout_width="75dp"
+                android:padding="5dp"
+                android:background="@drawable/imgborder"
+                android:layout_marginLeft="290dp"
+                android:layout_marginTop="10dp"
+                android:layout_height="100dp"
+                android:src="@drawable/bio"></ImageView>
+            <TextView
+                android:layout_width="75dp"
+                android:layout_height="40dp"
+                android:text="Not captured"
+                android:layout_marginLeft="297dp"
+                android:layout_marginTop="50dp"
+                android:textSize="15sp"
+                android:textStyle="bold"></TextView>
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="INSERT"
+            android:textSize="22sp"
+            android:textColor="#F0F8FF"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#01fee9"
+          >
+
+        </Button>
+    </LinearLayout>
+
+
+
+</ScrollView>
