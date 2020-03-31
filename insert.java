@@ -8,6 +8,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
+    //instance of dbhelper class
 DatabaseHelper myDb;
 EditText name,cnic,guardian,address,email,phno,program;
 Button register;
@@ -16,6 +17,8 @@ Button register;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        //instance of dbhelper class
+        //this willl call constructor of helper class and in constructor we r creating db and tbls.
         myDb = new DatabaseHelper(this);
         name=findViewById(R.id.txt_name);
         guardian=findViewById(R.id.txt_guardian);
@@ -33,10 +36,14 @@ Button register;
         register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+//whenever btn is clicked insertdata method is called through dbhelper clas instance
+                //and pass user's inserted data in edittxt as param
+                //and cnverting it in string as all data types of param's of insertdata are of string type
+                //sequnces of param must be same in this clss n alse in helper cls
                 boolean isInserted = myDb.insertData(name.getText().toString(),
                         guardian.getText().toString(),
                         cnic.getText().toString(),program.getText().toString(),address.getText().toString(),email.getText().toString(),phno.getText().toString());
+                //if true was retured by helper clss
                 if(isInserted == true)
                     Toast.makeText(MainActivity.this,"Data Inserted",Toast.LENGTH_LONG).show();
                 else
